@@ -1,0 +1,17 @@
+body,
+html,
+li,
+ol,
+ul,
+h5,
+h6,
+h4,
+h3,
+h2,
+h1,
+p,
+div {
+  padding: 0;
+  margin: 0;
+  background: #f3f3f3;
+}
