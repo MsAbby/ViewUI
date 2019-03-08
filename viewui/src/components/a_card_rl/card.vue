@@ -1,14 +1,14 @@
 <template>
   <div class="card-basic">
     <div class="card-left">
-      <img :src="image" alt="">
-    </div>
-    <div class="card-right">
       <h3 class="title">{{ title }}</h3>
       <p class="desc">{{ desc }}</p>
       <div class="bottom-box">
         <slot></slot>
       </div>
+    </div>
+    <div class="card-right">
+      <img :src="image" alt="">
     </div>
   </div>
 </template>
@@ -31,15 +31,6 @@ export default {
   margin-bottom: 20px;
 }
 .card-left {
-  width: 240px;
-  margin-right: 20px;
-  display: flex;
-  img {
-    width: 240px;
-    border-radius: 15px;
-  }
-}
-.card-right {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -79,7 +70,16 @@ export default {
       background: #fff;
       float: right;
     }
-  
   }
+}
+.card-right {
+  width: 240px;
+  margin-left: 20px;
+  display: flex;
+  img {
+    width: 240px;
+    border-radius: 15px;
+  }
+ 
 }
 </style>
