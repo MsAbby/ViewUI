@@ -2,6 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import 'lib-flexible'
+import './assets/style/reset.scss'
 import './assets/common.less'
 
 Vue.config.productionTip = false
